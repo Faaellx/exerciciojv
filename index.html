@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa IOS</title>
+</head>
+<body>
+    <h1>Exercicios  IOS</h1>
+
+    <h2>
+        1 - Verificação de Números:
+        Escreva um programa que verifica se um número é positivo, negativo ou zero.
+    </h2>
+    <h3>
+      2 -Verificação de Idade:
+      Crie um programa que determina se uma pessoa é menor de idade, maior de idade ou idosa
+      com base em sua idade.
+    </h3>
+    <h3>
+      3 - Verificação de Par ou Ímpar:
+      Crie um programa que determine se um número é par ou ímpar.
+    </h3>
+    <h3>
+      4 - Seleção de Bebida:
+      Com base na idade do usuário, sugira se ele pode ou não comprar bebidas alcoólicas
+    </h3>
+
+    <span class="infor"></span> <br>
+    <span class="idade"></span> <br>
+    <span class="par"></span> <br>
+    <span class="bebida"></span>
+
+    <script>
+      numero = prompt("Digite um numero (Pode ser tanto positivo, negativo ou zero):");
+      idade = prompt("Digite sua idade:");
+      par = prompt("Digite um numero inteiro:");
+      
+
+      //Tarefa 1
+      if(numero > 0){
+        var nome = document.querySelector('.infor');
+        nome.innerHTML = 'O numero '+numero+' é positivo.';
+      }
+
+      if (numero < 0) {
+        var nome = document.querySelector('.infor');
+        nome.innerHTML = 'O numero '+numero+' é negativo.';
+      }
+     if (numero == 0) {
+        var nome = document.querySelector('.infor');
+        nome.innerHTML = 'O numero prescisa ser diferente de zero.';
+      }
+      
+      //Fim da tarefa 1
+
+      //Tarefa 2 
+      if(idade < 17) {
+        var nome = document.querySelector('.idade');
+        nome.innerHTML = 'Você tem '+idade+' anos, então você é menor de idade.';
+      }
+
+      if(idade > 18) {
+        var nome = document.querySelector('.idade');
+        nome.innerHTML = 'Você tem '+idade+' anos, então você é maior de idade.';
+      }
+
+      if(idade >= 60) {
+        var nome = document.querySelector('.idade');
+        nome.innerHTML = 'Você tem '+idade+' anos, então você é uma pessoa idoso(a).';
+      }
+      //Fim Tarefa 2
+
+      //TArefa 3
+
+      if (par % 2 == 0) {
+        var nome = document.querySelector('.par');
+        nome.innerHTML = 'O '+par+' é um numero par.';
+      }
+       else {
+        var nome = document.querySelector('.par');
+        nome.innerHTML = 'O '+par+' é um numero impar.';
+      }
+      //Fim tarefa 3
+
+      //Tarefa 4
+
+      if( idade >= 18) {
+        var nome = document.querySelector('.bebida');
+        nome.innerHTML = 'Você pode Beber Bebidas Alcoólicas.';
+      }
+      else{
+        var nome = document.querySelector('.bebida');
+        nome.innerHTML = 'Você não pode Beber Bebidas Alcoólicas.';
+      }
+    
+    </script>
+</body>
+</html>
